@@ -13,6 +13,7 @@ html,body{
     height: 100vh;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 #homepage nav{
     width: 100%;
@@ -20,6 +21,8 @@ html,body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.338);
+    color: rgb(249, 221, 168);
 }
 .navleft{
     width: 210px;
@@ -50,4 +53,125 @@ html,body{
 .text1 h1 {
     font-size: 80px;
     font-family:Arial, Helvetica, sans-serif ;
+}
+#section2{
+    height:100vh;
+    weight:100% ;
+    background-color: black;
+    position: relative;
+}
+.s2iamge{
+     width: 40%;
+     height: 70%;
+     display: flex;
+    position: relative;
+    top: 10%;
+    gap: 5px;
+    left: 10%;
+}
+.s2iamge img { width: 50%;
+    height: 100%;
+    object-fit: cover;    
+
+
+}
+.s2iamge img:hover{
+    scale: 1.2;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1)0.5s;
+}
+.section2h1{
+    font-size: 100px;
+    position: absolute;
+    top: 8%;
+    left: 48%;
+    color: whitesmoke;
+}
+.textarea1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 60%;
+    top: -30%;
+    
+}
+.textarea1 button{
+    width: max-content;
+    background: transparent;
+    padding: 5px;
+    border: none;
+    margin: 3px;
+}
+.textarea2{
+    width: 40%;
+    padding: 15px;
+    padding-left: 15px;
+
+    background-color: rgb(55, 54, 54);
+    position:absolute ;
+    left: 40%;
+    top: 55%;
+
+}
+.textarea2 h1{ position: relative;
+    font-size: 50px;
+    line-height: 45px;
+    color: whitesmoke;
+  left: 10px;
+}
+.textarea2 p{
+    width: 60%;
+    position: relative;
+    left: 30%;
+    margin: 15px;
+    font-size: 12px;
+}
+.area2bottom{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:10px;
+    padding-right: 10px;
+}
+.area2bottomleft{
+    width: 30%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.area2bottomleft p{ 
+    font-size: 9px;
+    width: 25px;
+    position: relative;
+    
+}
+.area2bottomleft p:hover{ scale: 1.8;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1)1s;
+
+}
+
+.area2bottomleft h1{
+    font-size: 20px;
+    position: relative;
+   
+    
+}
+.area2bottomright{
+     width: 55%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+
+
+}
+.area2bottomright h1{
+    font-size: 12px;
+
+   
+    
 }
