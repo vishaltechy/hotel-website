@@ -9,13 +9,21 @@ html,body{
 }
 #homepage{
     background-image: url("/pexels-donaldtong94-189333.jpg");
+    
     width: 100%;
     height: 100vh;
     background-position: center;
     background-size: cover;
     position: relative;
 }
+
+#nav1{
+    position: absolute;
+    z-index: 9999999;
+}
+
 #homepage nav{
+    position: fixed;
     width: 100%;
     height: 50px;
     display: flex;
@@ -23,6 +31,10 @@ html,body{
     align-items: center;
     background-color: rgba(255, 255, 255, 0.338);
     color: rgb(249, 221, 168);
+   
+}
+.search{
+    align-items: center;
 }
 .navleft{
     width: 210px;
@@ -32,12 +44,15 @@ html,body{
     gap: 20px;
 }
 .navright{
-    width: 400px;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-
+    
+}
+.navright a {
+    text-decoration: none;
 }
 .navright>button{ 
     padding: 7px;
@@ -77,7 +92,7 @@ html,body{
 }
 .s2iamge img:hover{
     scale: 1.2;
-    transition: all cubic-bezier(0.075, 0.82, 0.165, 1)0.5s;
+     transition-duration: 1.3s;
 }
 .section2h1{
     font-size: 100px;
@@ -147,10 +162,10 @@ html,body{
     position: relative;
     
 }
-.area2bottomleft p:hover{ scale: 1.8;
+/* .area2bottomleft p:hover{ scale: 1.8;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1)1s;
 
-}
+} */
 
 .area2bottomleft h1{
     font-size: 20px;
@@ -165,8 +180,6 @@ html,body{
     justify-content: center;
     align-items: center;
     gap: 10px;
-  
-
 
 }
 .area2bottomright h1{
@@ -175,3 +188,250 @@ html,body{
    
     
 }
+.section3{ 
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+   
+}
+.section3 img{
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+
+}
+.section3 h1{
+     font-size: 90px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    color: whitesmoke;
+    z-index: 999;
+    width: 50%;
+    text-align: center;
+    line-height: 80px;
+}
+.section3textarea1{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(28, 28, 28);
+    top: 45%;
+    z-index: 99;
+    left: 5%;
+}
+.section3textarea1 h1{
+    width: 80%;
+    line-height: 25px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    left: 0%;
+}
+.section3textarea1 p{
+    font-size: 12px;
+    width: 80%;
+    position: relative;
+}
+.icontag{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+
+}
+.icontag i{
+    font-size: 10px;
+    background-color: rgba(167, 162, 162, 0.269);
+    padding: 2px;
+
+}
+.section3textarea1 button{
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    top: 20px;
+    left: 160px;
+    background-color: rgb(120, 116, 116);
+    padding: 15px;
+}
+.card-container{
+   width: 100%;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr ;
+   background-color: rgb(13, 13, 13);
+
+
+}
+.card{
+    align-items: center;
+    padding: 20px;
+    margin-left: 20%;
+
+}
+.card img{
+    width: 90%;
+    height: 250px;
+  
+    margin-top: 3px;
+    gap: 10px;
+}
+.card-content h1{
+    font-size: 20px;
+    color: rgb(210, 208, 208);
+}
+.card-content p{
+    font-size: 20px;
+    margin: 5px;
+    color: bisque);
+
+}
+.card-content button{
+    color: white;
+    background-color: rgb(33, 33, 33);
+}
+.section4{
+    width: 100%;
+    background-color: black;
+    display: grid;
+ grid-template-columns: 1fr 1fr;
+
+
+}
+.section4img img{
+     width: 40%;
+     position: relative;
+     left: 30px;
+     margin-top: 80px;
+     
+
+
+    
+
+}
+.s4area1 h1{ 
+    width: 34%;
+    position: relative;
+        font-size: 40px;
+        color: wheat;
+        top: 30px;
+        text-align: center;
+        left: 160px;
+}
+.s4area1 p{ 
+    color: white;
+    font-size: 20px;
+    margin-top: 10%;
+    text-align: center;
+    position: relative;
+    right: 30px;
+
+}
+.s4area1 button{
+    background-color: black;
+    position: relative;
+    right: -240px;
+    margin: 10px;
+}
+.card-container2{
+    width: 100%;
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   background-color: white;
+
+}
+.card2 img{ width: 30%;
+  border-radius: 50px;
+    margin-top: 40px;
+    margin-left: 70px;
+  border-radius: 20px;
+  border: 2px solid black; 
+}
+
+.card-content2 p {
+    align-content: center;
+    margin-left: 49px;
+    font-size: 15px;
+    margin-top: 20px;
+     color: rgb(46, 46, 46);
+
+
+}
+.card-container2 button { background-color: black;
+    margin-left: 44px;
+    margin-top: 8px;
+    
+
+}
+.footer{
+     background-color: rgb(50, 50, 50);
+     margin-top: 2px;
+    
+}
+.row{
+    display: flex;
+
+
+}
+.row ul{
+    margin: 20px;
+}
+.footer-col{
+    background-color: rgb(50, 50, 50);
+    
+}
+.footer-col p{
+
+    margin: 20px;
+    color: white;
+}
+.footer-col h4{
+    margin-left: 20px;
+    margin-top: 40px;
+    color: white;
+    font-size: 20px;
+
+}
+.container0{
+    width: 100%;
+}
+ .footer-col i{
+    
+    color: white;
+    margin-left: 10px;
+    
+
+ }
+ .footer-col a{
+    color: white;
+ }
+ .footer h1{
+    font-size: 30px;
+     margin: 20px;
+ }
+ .email{
+    margin: 40px;
+    font-size: 30px;
+ }
+ .email p {
+    font-size: 30px;
+ }
+ .email input {
+    color: black;
+    height: 30px;
+    width: 200px;
+    margin-top: 10px;
+ }
